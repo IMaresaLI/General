@@ -56,53 +56,18 @@ class hdrpsw(QtWidgets.QMainWindow):
         if b == '' :
             with open('settinghpw.py','w+',encoding='UTF-8') as file :
                 file.write('TR Seçildi.')
-                self.setWindowTitle('Şifre Oluşturucu | MARESAL PRM')
-                self.ui.groupBox.setTitle('Şifre Türünü Seçiniz.')
-                self.ui.radioButton.setText('Sadece Harf')
-                self.ui.radioButton_2.setText("Sadece Rakam")
-                self.ui.radioButton_3.setText("Her İkiside Olsun.")
-                self.ui.checkBox.setText('Özel Karakterler Eklensi mi ?')
-                self.ui.groupBox_2.setTitle('Karakter Boyutu Seçiniz.')
-                self.ui.label.setText('Şifreniz :')
-                self.ui.pushButton.setText('Oluştur')
-                self.ui.pushButton_2.setText('Kopyala')
-                self.ui.menuDil.setTitle('Dil')
-                self.ui.actionTr.setText('Türkçe')
-                self.ui.action_ngilizce_2.setText('İngilizce')
+                self.tr()
                 self.ui.actionTr.setChecked(True)
                 self.ui.action_ngilizce_2.setChecked(False)
         elif b == 'TR Seçildi.' :
-            self.setWindowTitle('Şifre Oluşturucu | MARESAL PRM')
-            self.ui.groupBox.setTitle('Şifre Türünü Seçiniz.')
-            self.ui.radioButton.setText('Sadece Harf')
-            self.ui.radioButton_2.setText("Sadece Rakam")
-            self.ui.radioButton_3.setText("Her İkiside Olsun.")
-            self.ui.checkBox.setText('Özel Karakterler Eklensi mi ?')
-            self.ui.groupBox_2.setTitle('Karakter Boyutu Seçiniz.')
-            self.ui.label.setText('Şifreniz :')
-            self.ui.pushButton.setText('Oluştur')
-            self.ui.pushButton_2.setText('Kopyala')
-            self.ui.menuDil.setTitle('Dil')
-            self.ui.actionTr.setText('Türkçe')
-            self.ui.action_ngilizce_2.setText('İngilizce')
+            self.tr()
             self.ui.actionTr.setChecked(True)
             self.ui.action_ngilizce_2.setChecked(False)
         elif b == 'EN Selected.' :
-            self.setWindowTitle('Password Generator | MARESAL PRM')
-            self.ui.groupBox.setTitle('Select Password Type')
-            self.ui.radioButton.setText('Letter Only')
-            self.ui.radioButton_2.setText("Digit Only")
-            self.ui.radioButton_3.setText("Have Both")
-            self.ui.checkBox.setText('Adding Special Characters?')
-            self.ui.groupBox_2.setTitle('Select Character Size.')
-            self.ui.label.setText('Your password :')
-            self.ui.pushButton.setText('Create')
-            self.ui.pushButton_2.setText('Copy')
-            self.ui.menuDil.setTitle('Language')
-            self.ui.actionTr.setText('Turkish')
-            self.ui.action_ngilizce_2.setText('English')
+            self.ing()
             self.ui.actionTr.setChecked(False)
             self.ui.action_ngilizce_2.setChecked(True)
+
 
     def selected(self):
         self.sender()
@@ -126,7 +91,7 @@ class hdrpsw(QtWidgets.QMainWindow):
                         character = string.digits
                         paswd = ''.join(choice(character) for x in range(randint(y-3,y)))
                         self.ui.lineEdit.setText(paswd)
-                    elif i.text() == 'Her İkiside Olsun.' or i.text() == 'Have Both' :
+                    elif i.text() == 'Her İkiside' or i.text() == 'Have Both' :
                         character = string.ascii_letters+string.digits
                         paswd =''.join(choice(character) for x in range(randint(y-3,y)))
                         self.ui.lineEdit.setText(paswd)
@@ -141,7 +106,7 @@ class hdrpsw(QtWidgets.QMainWindow):
                         character = string.digits+string.punctuation
                         paswd = ''.join(choice(character) for x in range(randint(y-3,y)))
                         self.ui.lineEdit.setText(paswd)
-                    elif i.text() == 'Her İkiside Olsun' or i.text() == 'Have Both':
+                    elif i.text() == 'Her İkiside' or i.text() == 'Have Both':
                         character = string.ascii_letters+string.digits+string.punctuation
                         paswd =''.join(choice(character) for x in range(randint(y-3,y)))
                         self.ui.lineEdit.setText(paswd)
@@ -169,7 +134,7 @@ class hdrpsw(QtWidgets.QMainWindow):
         self.ui.groupBox.setTitle('Şifre Türünü Seçiniz.')
         self.ui.radioButton.setText('Sadece Harf')
         self.ui.radioButton_2.setText("Sadece Rakam")
-        self.ui.radioButton_3.setText("Her İkiside Olsun.")
+        self.ui.radioButton_3.setText("Her İkiside")
         self.ui.checkBox.setText('Özel Karakterler Eklensi mi ?')
         self.ui.groupBox_2.setTitle('Karakter Boyutu Seçiniz.')
         self.ui.label.setText('Şifreniz :')
