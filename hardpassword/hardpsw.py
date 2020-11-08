@@ -97,7 +97,7 @@ class Ui_MainWindow(object):
         self.groupBox.setTitle(_translate("MainWindow", "Şifre Türünü Seçiniz"))
         self.radioButton.setText(_translate("MainWindow", "Sadece Harf"))
         self.radioButton_2.setText(_translate("MainWindow", "Sadece Rakam"))
-        self.radioButton_3.setText(_translate("MainWindow", "Her İkiside Olsun"))
+        self.radioButton_3.setText(_translate("MainWindow", "Her İkiside"))
         self.checkBox.setText(_translate("MainWindow", "Özel Karakterler Eklensi mi ?"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Karakter Boyutu Seçiniz."))
         self.comboBox.setItemText(0, _translate("MainWindow", "5"))
