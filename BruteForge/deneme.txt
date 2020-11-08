@@ -1,0 +1,5 @@
+msfadmin
+password
+msfadmina
+admin
+baseball
