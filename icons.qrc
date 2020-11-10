@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/aa.png</file>
+    <file>icons/closeleft.png</file>
+    <file>icons/closeright.png</file>
+    <file>icons/restartclose.png</file>
+    <file>icons/bar.png</file>
+    <file>icons/leftok.png</file>
+    <file>icons/leftok1.png</file>
+    <file>icons/reset.png</file>
+    <file>icons/reset1.png</file>
+    <file>icons/rightok.png</file>
+    <file>icons/rightok1.png</file>
+    <file>icons/marelogo.ico</file>
+    <file>icons/labelbrg.png</file>
+    <file>icons/btn.png</file>
+    <file>icons/exit.png</file>
+    <file>icons/btn1.png</file>
+    <file>icons/iletisim.png</file>
+    <file>icons/info.png</file>
+    <file>icons/mainlogo.png</file>
+    <file>icons/mplog.png</file>
+    <file>icons/mplog_mini.png</file>
+    <file>icons/Python.png</file>
+    <file>icons/python_mini.png</file>
+    <file>icons/info.png</file>
+    <file>icons/exit.png</file>
+    <file>icons/iletisim.png</file>
+    <file>icons/save.png</file>
+    <file>icons/update.png</file>
+  </qresource>
+</RCC>
