@@ -604,4 +604,4 @@ if __name__ == "__main__":
     main = dbkyt()
     app.setStyle('Fusion')
     app.exit(app.exec_())
-	cunsor.close()
+	cursor.close()
