@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icon/aa.png</file>
+    <file>icon/marelogo.ico</file>
+  </qresource>
+</RCC>

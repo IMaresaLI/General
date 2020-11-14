@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>506</width>
+    <height>407</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>506</width>
+    <height>4000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Şifreleme Algoritmaları | Maresal PRM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/icon/marelogo.ico</normaloff>:/icons/icon/marelogo.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Tek Şifreleme</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Çoğul Şifreleme</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>391</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Tekil Şifreleme</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>372</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>272</x>
+       <y>80</y>
+       <width>110</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Şifrele</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>110</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>md5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha224</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha256</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha384</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha512</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_224</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_256</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_384</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_512</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>blake2b</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>blake2s</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>shake_128</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>shake_256</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>372</width>
+       <height>42</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>151</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Şifrelemeyi Kaydet</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>142</x>
+       <y>80</y>
+       <width>111</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="statusTip">
+      <string>Örn : &quot;11 byte&quot; şeklinde yazılmalıdır.</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>12 byte</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>24 byte</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>32 byte</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>371</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>391</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Çoğul Şifreleme</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>372</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>272</x>
+       <y>80</y>
+       <width>110</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Şifrele</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>110</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>md5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha224</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha256</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha384</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha512</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_224</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_256</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_384</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>sha3_512</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>blake2b</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>blake2s</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>shake_128</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>shake_256</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>372</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Dosya Url</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_5">
+     <property name="geometry">
+      <rect>
+       <x>142</x>
+       <y>80</y>
+       <width>111</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="statusTip">
+      <string>Örn : &quot;11 byte&quot; şeklinde yazılmalıdır.</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>12 byte</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>24 byte</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>32 byte</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>371</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>30</y>
+       <width>32</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_5">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>360</y>
+      <width>321</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-4</x>
+      <y>0</y>
+      <width>511</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icons/icon/aa.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>comboBox_2</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>textBrowser_5</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>506</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDosya">
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="action_ifrelenenleri_Getir"/>
+    <addaction name="action_ifrelenenleri_Temizle"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_leti_im">
+    <property name="title">
+     <string>İletişim</string>
+    </property>
+    <addaction name="actionFacebook"/>
+    <addaction name="actionInstagram"/>
+    <addaction name="actionGithub"/>
+   </widget>
+   <addaction name="menuDosya"/>
+   <addaction name="menu_leti_im"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_ifrelenenleri_Getir">
+   <property name="text">
+    <string>Şifrelenenleri Getir</string>
+   </property>
+  </action>
+  <action name="action_ifrelenenleri_Temizle">
+   <property name="text">
+    <string>Şifrelenenleri Temizle</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+  </action>
+  <action name="actionFacebook">
+   <property name="text">
+    <string>Facebook</string>
+   </property>
+  </action>
+  <action name="actionInstagram">
+   <property name="text">
+    <string>Instagram</string>
+   </property>
+  </action>
+  <action name="actionGithub">
+   <property name="text">
+    <string>Github</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
