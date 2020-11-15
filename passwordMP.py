@@ -212,77 +212,77 @@ class pwmp(QtWidgets.QMainWindow):
                     self.kytcog()
                 elif sifrelemeTuru == 'Sha224':
                     pwmd = hashlib.sha224(n.encode('UTF-8')).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSha224 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nSha224 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Sha256':
                     pwmd = hashlib.sha256(n.encode('UTF-8')).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSha256 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nSha256 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Sha384':
                     pwmd = hashlib.sha384(n.encode('UTF-8')).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSha384 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nSha384 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Sha512':
                     pwmd = hashlib.sha512(n.encode('UTF-8')).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSha512 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nSha512 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Sha3_224':
                     pwmd = hashlib.sha3_224(n.encode('UTF-8')).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSha3_224 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nSha3_224 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Sha3_256':
                     pwmd = hashlib.sha3_256(n.encode('UTF-8')).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSha3_256 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nSha3_256 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Sha3_512':
                     pwmd = hashlib.sha3_512(n.encode('UTF-8')).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSha3_512 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nSha3_512 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Blake2b':
                     pwmd = hashlib.blake2b(n.encode('UTF-8'),digest_size=int(ayirma[0])).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nBlake2b ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nBlake2b ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Blake2s':
                     pwmd = hashlib.blake2s(n.encode('UTF-8'),digest_size=int(ayirma[0])).hexdigest()
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nBlake2s ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nBlake2s ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Shake_128':
                     pwmd = hashlib.shake_128(n.encode('UTF-8')).hexdigest(int(ayirma[0]))
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nShake_128 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {n}\nShake_128 ile Çevrilmiş Hali : {pwmd}\n'
                     self.pw.textBrowser_3.setText(a)
                     self.kytcog()
                 elif sifrelemeTuru == 'Shake_256':
                     pwmd = hashlib.shake_256(n.encode('UTF-8')).hexdigest(int(ayirma[0]))
-                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nMd5 ile Çevrilmiş Hali : {pwmd}\n')
+                    self.pw.textBrowser_5.setText(f'Yazılan : {n}\nSnake_256 ile Çevrilmiş Hali : {pwmd}\n')
                     a = self.pw.textBrowser_3.toPlainText()
                     a += f'Yazılan  : {pw}\nShake_256 ile Çevrilmiş Hali : {pwmd}'
                     self.pw.textBrowser_3.setText(a)
