@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/exit.png</file>
+    <file>icons/bas.png</file>
+    <file>icons/orta.png</file>
+    <file>icons/son.png</file>
+    <file>icons/border.png</file>
+  </qresource>
+</RCC>
