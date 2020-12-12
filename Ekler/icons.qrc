@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/marelogo.ico</file>
+    <file>icons/mplog.png</file>
+    <file>icons/Python.png</file>
+  </qresource>
+</RCC>
