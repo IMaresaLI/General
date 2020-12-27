@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#label{
+    image:url("icons/MaresalProgramming.png");
+}
+
+#pushButton{
+    border-radius: 0;
+    image: url("icons/document.png");
+}
+#pushButton:hover{
+    border-radius: 10;
+    background-color: darkred;
+}

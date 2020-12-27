@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>524</width>
+    <height>275</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Language Translate | Maresal PRM</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>170</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>İngilizce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Türkçe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Almanca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fransızca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>İspanyolca</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>50</y>
+      <width>170</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="currentText">
+     <string>İngilizce</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>İngilizce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Türkçe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Almanca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fransızca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>İspanyolca</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>220</width>
+      <height>110</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>90</y>
+      <width>220</width>
+      <height>110</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>421</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>comboBox_2</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>textEdit_2</zorder>
+   <zorder>pushButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>524</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
