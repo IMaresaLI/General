@@ -1,0 +1,15 @@
+#label {
+    border-image:url(icons/arkaplan.png)
+}
+
+#label_2{
+    image: url(icons/logo.png);
+}
+
+#pushButton_3{
+    border-image: url(icons/Minimize.png);
+}
+
+#pushButton_2{
+    border-image: url(icons/Exit.png);
+}
