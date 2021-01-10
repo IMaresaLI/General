@@ -1,0 +1,2 @@
+Programlama ya da diğer adıyla yazılımlama, bilgisayarın donanıma nasıl davranacağını anlatan, bilgisayara yön veren komutlar, kelimeler, 
+aritmetik işlemlerdir.Diğer bir tanım verecek olursak programlama, bilgisayar programlarının yazılması, test edilmesi ve bakımının yapılması sürecine verilen isimdir.
